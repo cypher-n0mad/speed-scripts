@@ -1,0 +1,50 @@
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+decorations = "none"
+opacity = 0.92
+blur = true
+
+[font]
+size = 13.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 1 }
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = "Block"
+
+[colors.primary]
+background = "0x0f111a"
+foreground = "0xcbe3e7"
+
+[colors.normal]
+black   = "0x1c1e26"
+red     = "0xe95678"
+green   = "0x29d398"
+yellow  = "0xfab795"
+blue    = "0x26bbd9"
+magenta = "0xee64ac"
+cyan    = "0x59e1e3"
+white   = "0xd5d8da"
+
+[colors.bright]
+black   = "0x3c3f4c"
+red     = "0xec6a88"
+green   = "0x3fdaa4"
+yellow  = "0xfbc3a7"
+blue    = "0x3fc4de"
+magenta = "0xf075b5"
+cyan    = "0x6be4e6"
+white   = "0xd5d8da"
+
+[selection]
+save_to_clipboard = true
+
+[debug]
+log_level = "Warn"
+
+live_config_reload = true
