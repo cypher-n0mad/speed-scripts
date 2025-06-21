@@ -95,8 +95,12 @@ bindsym $mod+Shift+Right move right
 # split in horizontal orientation
 bindsym $mod+h split h
 
-# split in vertical orientation
-bindsym $mod+v split v
+# Copy selected text to clipboard (primary → clipboard)
+bindsym $mod+c exec --no-startup-id xclip -o -selection primary | xclip -selection clipboard
+
+# Paste clipboard to focused window (simulate Ctrl+Shift+V or use xdotool)
+bindsym $mod+v exec --no-startup-id xclip -selection clipboard -o | xargs -0 xdotool type --clearmodifiers --delay 1
+
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
